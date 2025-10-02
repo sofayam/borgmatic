@@ -2,6 +2,8 @@
   source_directories:
     - /volume1
   repositories:
-    - url: /root/borgrepo
+    - path: /root/borgrepo
 
   encryption_passphrase: blabla
+
+  keep_daily: 7

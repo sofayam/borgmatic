@@ -1,0 +1,1 @@
+borgmatic --verbosity 1

@@ -17,7 +17,7 @@ RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/
 
 # Set a root password.
 # WARNING: You should change this to a more secure password.
-RUN echo 'root:password' | chpasswd
+RUN echo 'root:blabla' | chpasswd
 
 # Expose the SSH port
 EXPOSE 22
