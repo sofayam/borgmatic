@@ -1,0 +1,7 @@
+#what to back up (use absolute paths or ~ expansion handled by shell)
+  source_directories:
+    - /volume1
+  repositories:
+    - url: /root/borgrepo
+
+  encryption_passphrase: blabla

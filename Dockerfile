@@ -22,6 +22,9 @@ RUN echo 'root:password' | chpasswd
 # Expose the SSH port
 EXPOSE 22
 
+COPY config.yaml /etc/borgmatic/config.yaml
+
 # Start the SSH server
 CMD ["/usr/sbin/sshd", "-D"]
+
 
