@@ -1,9 +1,15 @@
 #what to back up (use absolute paths or ~ expansion handled by shell)
   source_directories:
-    - /volume1
+    - /volume1/yes1
+    - /volume1/yes2
+
   repositories:
     - path: /root/borgrepo
 
+  exclude_patterns:
+    - '**/#recycle/'
+    - '**/*.dvi'
+      
   encryption_passphrase: blabla
 
   keep_daily: 7

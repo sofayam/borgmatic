@@ -23,6 +23,8 @@ RUN echo 'root:blabla' | chpasswd
 EXPOSE 22
 
 COPY config.yaml /etc/borgmatic/config.yaml
+COPY initcmd.sh  /root/initcmd.sh
+COPY backupcmd.sh /root/backupcmd.sh
 
 # Start the SSH server
 CMD ["/usr/sbin/sshd", "-D"]
