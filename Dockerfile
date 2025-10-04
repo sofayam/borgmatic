@@ -7,6 +7,9 @@ RUN apt-get update && apt-get install -y \
     openssh-server \
     && pip install borgmatic
 
+
+ENV TZ=Europe/Lisbon
+
 # Create a directory for the SSH server to run
 RUN mkdir /var/run/sshd
 
