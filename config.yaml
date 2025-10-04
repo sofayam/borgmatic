@@ -1,13 +1,15 @@
 #what to back up (use absolute paths or ~ expansion handled by shell)
   source_directories:
-    - /volume1/yes1
-    - /volume1/yes2
+    - /volume1/data
 
   repositories:
-    - path: /root/borgrepo
+    #  - path: /root/borgrepo
+    - path: ssh://mark@192.168.68.114/mnt/borgdata/repo
 
   exclude_patterns:
     - '**/#recycle/'
+    - '**/#snapshot/'
+    - '**/BuriedTreasure/'
     - '**/*.dvi'
       
   encryption_passphrase: blabla

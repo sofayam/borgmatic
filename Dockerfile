@@ -25,6 +25,7 @@ EXPOSE 22
 COPY config.yaml /etc/borgmatic/config.yaml
 COPY initcmd.sh  /root/initcmd.sh
 COPY backupcmd.sh /root/backupcmd.sh
+COPY initssh.sh   /root/initssh.sh
 
 # Start the SSH server
 CMD ["/usr/sbin/sshd", "-D"]
