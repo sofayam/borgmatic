@@ -1,6 +1,8 @@
 #what to back up (use absolute paths or ~ expansion handled by shell)
   source_directories:
     - /volume1/data
+    - /volume2/transpodcontent
+# more coming soon
 
   repositories:
     #  - path: /root/borgrepo

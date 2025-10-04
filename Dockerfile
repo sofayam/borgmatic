@@ -25,7 +25,8 @@ RUN echo 'root:blabla' | chpasswd
 # Expose the SSH port
 EXPOSE 22
 
-COPY config.yaml /etc/borgmatic/config.yaml
+# route this through via -v in run command so you can change it from outside
+# COPY config.yaml /etc/borgmatic/config.yaml
 COPY initcmd.sh  /root/initcmd.sh
 COPY backupcmd.sh /root/backupcmd.sh
 COPY initssh.sh   /root/initssh.sh
