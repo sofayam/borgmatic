@@ -20,4 +20,6 @@
       
   encryption_passphrase: blabla
 
+  archive_name_format: '{now:%Y-%m-%d_%H-%M}'
+  
   keep_daily: 7
