@@ -1,6 +1,9 @@
 #what to back up (use absolute paths or ~ expansion handled by shell)
   source_directories:
     - /volume1/data
+    - /volume1/music
+    - /volume1/video	
+    - /volume1/homes/mark
     - /volume2/transpodcontent
 # more coming soon
 
@@ -13,6 +16,7 @@
     - '**/#snapshot/'
     - '**/BuriedTreasure/'
     - '**/*.dvi'
+    - '**/@eaDir/'
       
   encryption_passphrase: blabla
 
