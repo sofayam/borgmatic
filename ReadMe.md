@@ -45,3 +45,13 @@ and then
 
     ssh-copy-id mark@192.168.68.114
 
+### mounting
+
+currently only working as root and for one archive
+
+### pruning
+
+really only need last archive, prune like this
+
+borg prune /mnt/borgdata/rpmrepo --keep-daily=1 --keep-weekly=0 --keep-monthly=0 --keep-yearly=0
+
