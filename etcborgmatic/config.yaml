@@ -4,12 +4,13 @@
     - /volume1/music
     - /volume1/video	
     - /volume1/homes/mark
+    - /volume1/docker
     - /volume2/transpodcontent
 # more coming soon
 
   repositories:
     #  - path: /root/borgrepo
-    - path: ssh://mark@192.168.68.114/mnt/borgdata/rpmrepo
+    - path: ssh://mark@192.168.68.120/mnt/borgdata/rpmrepo
 
   exclude_patterns:
     - '**/#recycle/'
@@ -23,3 +24,5 @@
   archive_name_format: '{now:%Y-%m-%d_%H-%M}'
   
   keep_daily: 7
+
+  relocated_repo_access_is_ok: true
