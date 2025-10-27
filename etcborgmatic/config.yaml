@@ -15,9 +15,9 @@
   exclude_patterns:
     - '**/#recycle/'
     - '**/#snapshot/'
-    - '**/BuriedTreasure/'
     - '**/*.dvi'
     - '**/@eaDir/'
+    - '**/node_modules/'
       
   encryption_passphrase: blabla
 
